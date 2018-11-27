@@ -1,0 +1,22 @@
+{
+	"shell_cmd": "g++ \"${file}\" -o \"${file_base_name}\" -g3 -std=c++1z -Wall -Wextra -Wconversion -pedantic",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.c++",
+
+	"variants":
+	[
+		{
+			"name": "c",
+			"shell_cmd": "g++ -c \"${file}\" -g3 -std=c++1z -Wall -Wextra -Wconversion -pedantic",
+		},
+		{
+			"name": "Run",
+			"shell_cmd": "g++ \"${file}\" -o \"${file_base_name}\" -g3 -std=c++1z -Wall -Wextra -Wconversion -pedantic && \"${file_path}/${file_base_name}\"",
+		},
+		{
+			"name": "Release",
+			"shell_cmd": "g++ \"${file}\" -o \"${file_base_name}\" -O3 -std=c++1z -Wall -Wextra -Wconversion -pedantic",
+		}
+	]
+}
