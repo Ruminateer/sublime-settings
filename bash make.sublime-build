@@ -8,8 +8,12 @@
 			"shell_cmd": "bash -c \"make clean\""
 		},
 		{
-			"name": "trial",
-			"shell_cmd": "bash -c \"make trial\""
+			"name": "debug",
+			"shell_cmd": "bash -c \"make debug\""
+		},
+		{
+			"name": "release",
+			"shell_cmd": "bash -c \"make release\""
 		}
 	]
 }
