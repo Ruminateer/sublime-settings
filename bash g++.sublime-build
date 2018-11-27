@@ -1,5 +1,5 @@
 {
-	"shell_cmd": "bash -c \"g++ \"${file_base_name}.${file_extension}\" -o \"${file_base_name}\" -Wall -Wextra -Wconversion -std=c++1z -pedantic\"",
+	"shell_cmd": "bash -c \"g++ \"${file_name}\" -o \"${file_base_name}\" -g3 -std=c++1z -Wall -Wextra -Wconversion -pedantic\"",
 	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
 	"working_dir": "${file_path}",
 	"selector": "source.c++",
@@ -8,15 +8,15 @@
 	[
 		{
 			"name": "Run",
-			"shell_cmd": "bash -c \"g++ \"${file_base_name}.${file_extension}\" -o \"${file_base_name}\" -Wall -Wextra -Wconversion -std=c++1z -pedantic && ./${file_base_name}\"",
+			"shell_cmd": "bash -c \"g++ \"${file_name}\" -o \"${file_base_name}\" -g3 -std=c++1z -Wall -Wextra -Wconversion -pedantic && ./${file_base_name}\"",
 		},
 		{
 			"name": "c",
-			"shell_cmd": "bash -c \"g++ -c \"${file_base_name}.${file_extension}\" -Wall -Wextra -Wconversion -std=c++1z -pedantic\"",
+			"shell_cmd": "bash -c \"g++ -c \"${file_name}\" -g3 -Wall -Wextra -Wconversion -std=c++1z -pedantic\"",
 		},
 		{
-			"name": "O3",
-			"shell_cmd": "bash -c \"g++ \"${file_base_name}.${file_extension}\" -o \"${file_base_name}\" -Wall -Wextra -Wconversion -std=c++1z -O3 -pedantic\"",
+			"name": "Release",
+			"shell_cmd": "bash -c \"g++ \"${file_name}\" -o \"${file_base_name}\" -std=c++1z -O3 -Wall -Wextra -Wconversion -pedantic\"",
 		}
 	]
 }
