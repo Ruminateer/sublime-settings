@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Git",
+		"LaTeXTools",
+		"Package Control",
+		"SFTP",
+		"sublime-text-2-buildview",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-gcc",
+		"Terminal",
+		"Verilog"
+	]
+}

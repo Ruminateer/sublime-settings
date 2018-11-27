@@ -1,0 +1,18 @@
+{
+	"shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" -Wall -O2 -std=c++11 -pedantic",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.c++",
+
+	"variants":
+	[
+		{
+			"name": "Run",
+			"shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" -Wall -O2 -std=c++11 -pedantic && \"${file_path}/${file_base_name}\"",
+		},
+		{
+			"name": "c",
+			"shell_cmd": "g++ -c \"${file}\" -Wall -O2 -std=c++11 -pedantic",
+		}
+	]
+}

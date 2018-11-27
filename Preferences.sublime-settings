@@ -1,0 +1,36 @@
+{
+	"added_words":
+	[
+		"cpp",
+		"ifempty",
+		"flytrap",
+		"ifenemy",
+		"fstream",
+		"iostream",
+		"jpg",
+		"Enum",
+		"cout",
+		"Init",
+		"autograder",
+		"diagonalization",
+		"hardcoded",
+		"iff",
+		"vertices",
+		"indices"
+	],
+	"bold_folder_labels": true,
+	"close_windows_when_empty": true,
+	"ensure_newline_at_eof_on_save": false,
+	"font_size": 17,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Color Scheme - Legacy",
+		"SFTP",
+		"sublime-text-2-buildview"
+	],
+	"remember_full_screen": true,
+	"save_on_focus_lost": true,
+	"spell_check": true,
+	"word_wrap": true
+}

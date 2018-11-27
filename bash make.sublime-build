@@ -1,0 +1,15 @@
+{
+	"shell_cmd": "bash -c make",
+
+	"variants":
+	[
+		{
+			"name": "clean",
+			"shell_cmd": "bash -c \"make clean\""
+		},
+		{
+			"name": "trial",
+			"shell_cmd": "bash -c \"make trial\""
+		}
+	]
+}
