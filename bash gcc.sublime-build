@@ -1,5 +1,5 @@
 {
-	"shell_cmd": "bash -c \"gcc \"${file_name}\" -o \"${file_base_name}\" -Wall -pedantic -lm -std=c99\"",
+	"shell_cmd": "bash -c \"gcc \"${file_name}\" -o \"${file_base_name}\" -Wall -pedantic -lm -std=c99 -g3\"",
 	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
 	"working_dir": "${file_path}",
 	"selector": "source.c",
@@ -8,11 +8,11 @@
 	[
 		{
 			"name": "Run",
-			"shell_cmd": "bash -c \"gcc \"${file_name}\" -o \"${file_base_name}\" -Wall -pedantic -lm -std=c99 && ./${file_base_name}\"",
+			"shell_cmd": "bash -c \"gcc \"${file_name}\" -o \"${file_base_name}\" -Wall -pedantic -lm -std=c99 -g3 && ./${file_base_name}\"",
 		},
 		{
 			"name": "c",
-			"shell_cmd": "bash -c \"gcc -c \"${file_name}\" -Wall -pedantic -lm -std=c99\"",
+			"shell_cmd": "bash -c \"gcc -c \"${file_name}\" -Wall -pedantic -lm -std=c99 -g3\"",
 		}
 	]
 }
